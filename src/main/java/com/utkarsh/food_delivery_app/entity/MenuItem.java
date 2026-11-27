@@ -1,11 +1,13 @@
 package com.utkarsh.food_delivery_app.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "menu_items")
+@Data
 public class MenuItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

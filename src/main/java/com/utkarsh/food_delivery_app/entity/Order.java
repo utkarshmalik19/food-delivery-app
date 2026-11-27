@@ -2,6 +2,7 @@ package com.utkarsh.food_delivery_app.entity;
 
 import com.utkarsh.food_delivery_app.entity.enums.OrderStatus;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "orders")
+@Data
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

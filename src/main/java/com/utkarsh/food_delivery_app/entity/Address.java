@@ -2,9 +2,11 @@ package com.utkarsh.food_delivery_app.entity;
 
 import com.utkarsh.food_delivery_app.entity.enums.AddressType;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "addresses")
+@Data
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
