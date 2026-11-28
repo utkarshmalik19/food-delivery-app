@@ -2,7 +2,10 @@ package com.utkarsh.food_delivery_app.entity;
 
 import com.utkarsh.food_delivery_app.entity.enums.Role;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
@@ -16,4 +19,5 @@ public class User {
     private String phone;
     private String password;
     private Role role;
+
 }
